@@ -1,0 +1,18 @@
+:root {
+  bc-1: #9d8b84;
+  bc-2: #8996a6;
+  bc-3: #849d8f;
+  yellow: #fff771;
+  peach: #ffbc9e;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* end */
