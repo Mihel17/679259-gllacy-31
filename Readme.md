@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Miguel Fedosyeyev](https://up.htmlacademy.ru/htmlcss/31/user/679259).
-* Наставник: `Неизвестно`.
+* Студент: [Мигель Федосеев](https://up.htmlacademy.ru/htmlcss/31/user/679259).
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
