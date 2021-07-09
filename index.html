@@ -16,7 +16,7 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-nav container">
-      <a href="index.html" class="logo">
+      <a class="logo">
         <img src="img/logo.svg" alt="Логотип интернет-магазина Глейси" width="154" height="64">
       </a>
       <ul class="main-nav__list no-style">
@@ -26,8 +26,8 @@
             <li class="catalog-dropdown__item">
               <p class="catalog-dropdown__category">Новинки</p>
               <ul class="catalog-dropdown__products-list no-style">
-                <li class="catalog-dropdown__product catalog-dropdown__product--current">
-                  <a class="catalog-dropdown__product-link" href="blank.html">Сливочное</a>
+                <li class="catalog-dropdown__product">
+                  <a class="catalog-dropdown__product-link" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="catalog-dropdown__product">
                   <a class="catalog-dropdown__product-link" href="blank.html">Щербеты</a>
@@ -78,7 +78,7 @@
             <label class="visually-hidden" for="login__email"></label>
             <input type="email" id="login__email" placeholder="email@example.com">
             <label class="visually-hidden" for="login__password"></label>
-            <input type="password" id="login__password" placeholder="......">
+            <input type="password" id="login__password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
             <button class="btn" type="submit">Войти</button>
             <div class="main-nav__login-links">
               <a href="">Забыли пароль?</a>
@@ -88,7 +88,7 @@
         </li>
         <li class="main-nav__btn main-nav__cart">
           <div class="main-nav__btn-link">
-            <a class="main-nav__cart-link">
+            <a class="main-nav__cart-link" href="blank.html">
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="main-nav__cart-img"
                   d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z"
@@ -100,36 +100,8 @@
                   d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z"
                   fill="white" />
               </svg>
-              2 товара
+              Пусто
             </a>
-          </div>
-          <div class="cart-dropbown dropdown">
-            <ul class="cart-dropbown__list no-style">
-              <li>
-                <dl class="cart-dropbown__products no-style">
-                  <dt class="cart-dropbown__products-text no-style">Пломбир с апельсиновым джемом</dt>
-                  <dd class="cart-dropbown__products-img"><img src="img/ice-cream-1.jpg" width="33" height="33" alt="">
-                  </dd>
-                  <dd class="cart-dropbown__products-price no-style">1,5 кг х <span
-                      class="cart-dropbown__products-money">200 руб.</span></dd>
-                  <dd class="cart-dropbown__products-cost no-style">300 руб.</dd>
-                </dl>
-              </li>
-              <li>
-                <dl class="cart-dropbown__products no-style">
-                  <dt class="cart-dropbown__products-text no-style">Клубничный пломбир с присыпкой из белого шоколада
-                  </dt>
-                  <dd class="cart-dropbown__products-img"><img src="img/ice-cream-3.jpg" width="33" height="33" alt="">
-                  </dd>
-                  <dd class="cart-dropbown__products-price no-style">1,5 кг х <span
-                      class="cart-dropbown__products-money">300 руб.</span></dd>
-                  <dd class="cart-dropbown__products-cost no-style">450 руб.</dd>
-                </dl>
-              </li>
-            </ul>
-            <p class="cart-dropbown__products-amount">Итого:<span class="cart-dropbown__products-check">750 руб.</span>
-            </p>
-            <button class="btn cart-dropbown__btn">Оформить заказ</button>
           </div>
         </li>
       </ul>
@@ -150,7 +122,7 @@
             <article class="promo__slide-content">
               <h3 class="promo__slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
               <img class="promo__slide-img" src="img/promo-slide-1.png" alt="" width="716" height="716">
-              <button class="promo__slide-btn btn">Давайте оба!</button>
+              <a class="promo__slide-btn btn" href="blank.html">Давайте оба!</a>
             </article>
           </li>
           <li class="promo__slide promo__slide-2">
@@ -158,7 +130,7 @@
             <article class="promo__slide-content">
               <h3 class="promo__slide-title">Шоколадный пломбир и лимонный сорбет</h3>
               <img class="promo__slide-img" src="img/promo-slide-2.png" alt="" width="716" height="716">
-              <button class="promo__slide-btn btn">Давайте оба!</button>
+              <a class="promo__slide-btn btn" href="blank.html">Давайте оба!</a>
             </article>
           </li>
           <li class="promo__slide promo__slide-3">
@@ -166,7 +138,7 @@
             <article class="promo__slide-content">
               <h3 class="promo__slide-title">Пломбир с помадкой<br> и клубничный щербет</h3>
               <img class="promo__slide-img" src="img/promo-slide-3.png" alt="" width="716" height="716">
-              <button class="promo__slide-btn btn">Давайте оба!</button>
+              <a class="promo__slide-btn btn" href="blank.html">Давайте оба!</a>
             </article>
           </li>
         </ul>
@@ -190,39 +162,61 @@
             <p class="advertising__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
               малинового варенья бесплатно.
             </p>
-            <a class="advertising__btn btn" href="">Хочу варенье!</a>
+            <a class="advertising__btn btn" href="blank.html">Хочу варенье!</a>
           </li>
           <li class="advertising__item advertising__item--chocolate">
             <h3 class="advertising__title">Шоколадки даром!</h3>
             <p class="advertising__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
               присыпки совершенно
               бесплатно.</p>
-            <a class="advertising__btn btn" href="">Хочу шоколадки!</a>
+            <a class="advertising__btn btn" href="blank.html">Хочу шоколадки!</a>
           </li>
         </ul>
       </section>
       <section class="catalog main-layout">
         <h2 class="visually-hidden">Разные виды мороженого</h2>
         <ul class="catalog__list no-style">
-          <li class="catalog__item catalog__item--hit">
-            <img class="catalog__item-img" src="img/ice-cream-1.jpg" alt="" width="267" height="267">
-            <h3 class="catalog__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <p class="catalog__item-price">310 ₽<span class="catalog__item-weight">/кг</span></p>
+          <li class="catalog__item">
+            <article class="catalog__item-content">
+              <img class="catalog__item-img" src="img/ice-cream-1.jpg" alt="" width="267" height="267">
+              <h3 class="catalog__title">
+                <a class="catalog__title-link" href="blank.html">Сливочное с апельсиновым джемом и цитрусовой
+                  стружкой</a>
+              </h3>
+              <p class="catalog__item-price">310 ₽<span class="catalog__item-weight">/кг</span></p>
+              <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
+            </article>
           </li>
-          <li class="catalog__item catalog__item--hit">
-            <img class="catalog__item-img" src="img/ice-cream-2.jpg" alt="" width="267" height="267">
-            <h3 class="catalog__title">Сливочно-кофейное с кусочками шоколада</h3>
-            <p class="catalog__item-price">380 ₽<span class="catalog__item-weight">/кг</span></p>
+          <li class="catalog__item">
+            <article class="catalog__item-content">
+              <img class="catalog__item-img" src="img/ice-cream-2.jpg" alt="" width="267" height="267">
+              <h3 class="catalog__title">
+                <a class="catalog__title-link" href="blank.html">Сливочно-кофейное с кусочками шоколада</a>
+              </h3>
+              <p class="catalog__item-price">380 ₽<span class="catalog__item-weight">/кг</span></p>
+              <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
+            </article>
           </li>
-          <li class="catalog__item catalog__item--hit">
-            <img class="catalog__item-img" src="img/ice-cream-3.jpg" alt="" width="267" height="267">
-            <h3 class="catalog__title">Сливочно-клубничное<br> с присыпкой из белого шоколада</h3>
-            <p class="catalog__item-price">355 ₽<span class="catalog__item-weight">/кг</span></p>
+          <li class="catalog__item">
+            <article class="catalog__item-content">
+              <img class="catalog__item-img" src="img/ice-cream-3.jpg" alt="" width="267" height="267">
+              <h3 class="catalog__title">
+                <a class="catalog__title-link" href="blank.html">Сливочно-клубничное<br> с присыпкой из белого
+                  шоколада</a>
+              </h3>
+              <p class="catalog__item-price">355 ₽<span class="catalog__item-weight">/кг</span></p>
+              <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
+            </article>
           </li>
-          <li class="catalog__item catalog__item--hit">
-            <img class="catalog__item-img" src="img/ice-cream-4.jpg" alt="" width="267" height="267">
-            <h3 class="catalog__title">Сливочное крем-брюле<br> с карамельной подливкой </h3>
-            <p class="catalog__item-price">415&nbsp;&nbsp;₽<span class="catalog__item-weight">/кг</span></p>
+          <li class="catalog__item">
+            <article class="catalog__item-content">
+              <img class="catalog__item-img" src="img/ice-cream-4.jpg" alt="" width="267" height="267">
+              <h3 class="catalog__title">
+                <a class="catalog__title-link" href="blank.html">Сливочное крем-брюле<br> с карамельной подливкой</a>
+              </h3>
+              <p class="catalog__item-price">415&nbsp;&nbsp;₽<span class="catalog__item-weight">/кг</span></p>
+              <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
+            </article>
           </li>
         </ul>
       </section>
@@ -320,27 +314,27 @@
       <li class="main-footer__nav-item"><a href="blank.html">Наши документы</a></li>
       <li class="main-footer__nav-item"><a href="blank.html">Экологические стандарты</a></li>
     </ul>
-    <a href="" class="logo-html-academy">
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-html-academy" target="_blank">
       <img src="img/logo-html-academy.svg" alt="логотип html academy" width="108" height="31">
     </a>
     <p class="main-footer__copy">Сделано в HTML Academy © 2021</p>
   </footer>
 
   <!-- modal -->
-
-  <section class="visually-hidden feedback-modal">
+  <div class="feedback-modal hidden">
     <form class="feedback-modal__form" action="https://echo.htmlacademy.ru/" method="POST">
       <p class="feedback-modal__title">Мы обязательно вам ответим!</p>
       <label class="visually-hidden" for="feedback-modal__name"></label>
-      <input class="input" type="text" id="feedback-modal__name" placeholder="Имя Фамилия">
+      <input class="input" type="text" name="name" id="feedback-modal__name" placeholder="Имя Фамилия">
       <label class="visually-hidden" for="feedback-modal__email"></label>
-      <input class="input" type="email" id="feedback-modal__email" placeholder="email@example.com">
-      <label for="feedback-modal__message"></label>
-      <textarea class="input" name="feedback-modal__message" id="feedback-modal__message" rows="10"
+      <input class="input" type="email" name="email" id="feedback-modal__email" placeholder="email@example.com">
+      <label class="visually-hidden" for="feedback-modal__message"></label>
+      <textarea class="feedback-modal__textarea input" name="message" id="feedback-modal__message" rows="9"
         placeholder="В свободной форме"></textarea>
-      <input type="submit">
+      <button class="feedback-modal__btn btn" type="submit">Отправить</button>
+      <button class="modal-close"></button>
     </form>
-  </section>
+  </div>
 
   <!-- modal -->
 

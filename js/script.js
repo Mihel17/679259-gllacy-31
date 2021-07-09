@@ -46,3 +46,20 @@ sliderBtn3.addEventListener("click", function(evt){
   console.log("click3");
 });
 
+// modal
+
+const contactBtn = document.querySelector(".contacts__btn");
+const modal = document.querySelector(".feedback-modal");
+const modalClose = document.querySelector(".modal-close");
+
+contactBtn.addEventListener("click", function(evt){
+  evt.preventDefault();
+  modal.classList.remove("hidden");
+  console.log('modal-open');
+});
+
+modalClose.addEventListener("click", function(evt){
+  evt.preventDefault();
+  modal.classList.add("hidden");
+  console.log('modal-close');
+});
