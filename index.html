@@ -57,7 +57,7 @@
             </div>
           </div>
           <form class="main-nav__search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="main-nav__search-form-input" id="main-nav__search" type="text" placeholder="Крем-брюле">
+            <input class="main-nav__search-form-input input" id="main-nav__search" type="text" placeholder="Крем-брюле">
             <label class="visually-hidden" for="main-nav__search"></label>
           </form>
         </li>
@@ -76,13 +76,14 @@
           </div>
           <form class="main-nav__login-form dropdown" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="login__email"></label>
-            <input type="email" id="login__email" placeholder="email@example.com">
+            <input class="input" type="email" id="login__email" placeholder="email@example.com">
             <label class="visually-hidden" for="login__password"></label>
-            <input type="password" id="login__password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
+            <input class="input" type="password" id="login__password"
+              placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
             <button class="btn" type="submit">Войти</button>
             <div class="main-nav__login-links">
-              <a href="">Забыли пароль?</a>
-              <a href="">Новая регистрация</a>
+              <a class="link-in-white" href="blank.html">Забыли пароль?</a>
+              <a class="link-in-white" href="blank.html">Новая регистрация</a>
             </div>
           </form>
         </li>
@@ -107,7 +108,9 @@
       </ul>
       <div class="main-nav__contacts-info">
         <p class="main-nav__contacts-time">с 10 до 20, ежедневно</p>
-        <p class="main-nav__contacts-tel"><a href="tel:88124502525">8 812 450-25-25</a></p>
+        <p class="main-nav__contacts-tel">
+          <a class="main-nav__tel" href="tel:88124502525">8 812 450-25-25</a>
+        </p>
       </div>
     </nav>
   </header>
@@ -176,18 +179,18 @@
       <section class="catalog main-layout">
         <h2 class="visually-hidden">Разные виды мороженого</h2>
         <ul class="catalog__list no-style">
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--hit">
             <article class="catalog__item-content">
               <img class="catalog__item-img" src="img/ice-cream-1.jpg" alt="" width="267" height="267">
               <h3 class="catalog__title">
                 <a class="catalog__title-link" href="blank.html">Сливочное с апельсиновым джемом и цитрусовой
-                  стружкой</a>
+                  стружкой TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST</a>
               </h3>
               <p class="catalog__item-price">310 ₽<span class="catalog__item-weight">/кг</span></p>
               <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
             </article>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--hit">
             <article class="catalog__item-content">
               <img class="catalog__item-img" src="img/ice-cream-2.jpg" alt="" width="267" height="267">
               <h3 class="catalog__title">
@@ -197,7 +200,7 @@
               <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
             </article>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--hit">
             <article class="catalog__item-content">
               <img class="catalog__item-img" src="img/ice-cream-3.jpg" alt="" width="267" height="267">
               <h3 class="catalog__title">
@@ -208,7 +211,7 @@
               <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
             </article>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--hit">
             <article class="catalog__item-content">
               <img class="catalog__item-img" src="img/ice-cream-4.jpg" alt="" width="267" height="267">
               <h3 class="catalog__title">
@@ -222,7 +225,8 @@
       </section>
       <section class="features main-layout">
         <h2 class="visually-hidden"></h2>
-        <p class="features__fake-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
+        <p class="features__fake-title">Магазин Глэйси &minus; это онлайн и офлайн-магазин по продаже мороженого
+          собственного
           производства на развес</p>
         <ul class="features__list no-style">
           <li class="features__item features__item-1">
@@ -248,7 +252,7 @@
         <h2 class="blog__title">Новое в нашем блоге</h2>
         <article>
           <a href="blank.html">
-            <h3 class="blog__content-title">10 способов сервировки фруктовых щербетов к столу</h3>
+            <h3 class="blog__content-title link-in-white">10 способов сервировки фруктовых щербетов к столу</h3>
           </a>
         </article>
       </section>
@@ -259,8 +263,8 @@
             что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe__form-input" type="email" placeholder="email@example.com">
-            <input class="subscribe__submit btn" type="submit">
+            <input class="subscribe__form-input input" type="email" placeholder="email@example.com">
+            <button class="subscribe__submit btn" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -277,7 +281,7 @@
           </dd>
           <dt class="contacts__term">Для заказов по телефону:</dt>
           <dd class="contacts__defenition">
-            <a class="contacts__tel" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a class="contacts__tel link-in-white" href="tel:+78005558628">+7 800 555-86-28</a>
           </dd>
           <dd class="contacts__time">(с 10 до 20 ежедневно)</dd>
         </dl>
@@ -310,14 +314,17 @@
     </ul>
     <ul class="main-footer__nav-list no-style">
       <li class="main-footer__nav-item main-footer__nav-provider"><a href="blank.html">Для поставщиков</a></li>
-      <li class="main-footer__nav-item"><a href="blank.html">О производстве</a></li>
       <li class="main-footer__nav-item"><a href="blank.html">Наши документы</a></li>
+      <li class="main-footer__nav-item"><a href="blank.html">О производстве</a></li>
       <li class="main-footer__nav-item"><a href="blank.html">Экологические стандарты</a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-html-academy" target="_blank">
+    <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
       <img src="img/logo-html-academy.svg" alt="логотип html academy" width="108" height="31">
     </a>
-    <p class="main-footer__copy">Сделано в HTML Academy © 2021</p>
+    <p class="main-footer__copy">
+      Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML
+        Academy</a> © 2021
+    </p>
   </footer>
 
   <!-- modal -->
@@ -325,12 +332,14 @@
     <form class="feedback-modal__form" action="https://echo.htmlacademy.ru/" method="POST">
       <p class="feedback-modal__title">Мы обязательно вам ответим!</p>
       <label class="visually-hidden" for="feedback-modal__name"></label>
-      <input class="input" type="text" name="name" id="feedback-modal__name" placeholder="Имя Фамилия">
+      <input class="input feedback-modal__input" type="text" name="name" id="feedback-modal__name"
+        placeholder="Имя Фамилия">
       <label class="visually-hidden" for="feedback-modal__email"></label>
-      <input class="input" type="email" name="email" id="feedback-modal__email" placeholder="email@example.com">
+      <input class="input feedback-modal__input" type="email" name="email" id="feedback-modal__email"
+        placeholder="email@example.com">
       <label class="visually-hidden" for="feedback-modal__message"></label>
-      <textarea class="feedback-modal__textarea input" name="message" id="feedback-modal__message" rows="9"
-        placeholder="В свободной форме"></textarea>
+      <textarea class="feedback-modal__textarea input feedback-modal__input" name="message" id="feedback-modal__message"
+        rows="9" placeholder="В свободной форме"></textarea>
       <button class="feedback-modal__btn btn" type="submit">Отправить</button>
       <button class="modal-close"></button>
     </form>

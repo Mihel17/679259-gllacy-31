@@ -57,7 +57,7 @@
             </div>
           </div>
           <form class="main-nav__search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="main-nav__search-form-input" id="main-nav__search" type="text" placeholder="Крем-брюле">
+            <input class="main-nav__search-form-input input" id="main-nav__search" type="text" placeholder="Крем-брюле">
             <label class="visually-hidden" for="main-nav__search"></label>
           </form>
         </li>
@@ -76,13 +76,13 @@
           </div>
           <form class="main-nav__login-form dropdown" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="login__email"></label>
-            <input type="text" id="login__email" placeholder="email@example.com">
+            <input class="input" type="text" id="login__email" placeholder="email@example.com">
             <label class="visually-hidden" for="login__password"></label>
-            <input type="text" id="login__password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
+            <input class="input" type="text" id="login__password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;">
             <button class="btn" type="submit">Войти</button>
             <div class="main-nav__login-links">
-              <a href="">Забыли пароль?</a>
-              <a href="">Новая регистрация</a>
+              <a class="link-in-white" href="blank.html">Забыли пароль?</a>
+              <a class="link-in-white" href="blank.html">Новая регистрация</a>
             </div>
           </form>
         </li>
@@ -108,6 +108,7 @@
             <ul class="cart-dropbown__list no-style">
               <li>
                 <dl class="cart-dropbown__products no-style">
+                  <button class="cart-dropbown__close"></button>
                   <dt class="cart-dropbown__products-text no-style">Пломбир с апельсиновым джемом</dt>
                   <dd class="cart-dropbown__products-img"><img src="img/ice-cream-1.jpg" width="33" height="33" alt="">
                   </dd>
@@ -118,6 +119,7 @@
               </li>
               <li>
                 <dl class="cart-dropbown__products no-style">
+                  <button class="cart-dropbown__close"></button>
                   <dt class="cart-dropbown__products-text no-style">Клубничный пломбир с присыпкой из белого шоколада
                   </dt>
                   <dd class="cart-dropbown__products-img"><img src="img/ice-cream-3.jpg" width="33" height="33" alt="">
@@ -136,19 +138,23 @@
       </ul>
       <div class="main-nav__contacts-info">
         <p class="main-nav__contacts-time">с 10 до 20, ежедневно</p>
-        <p class="main-nav__contacts-tel"><a href="tel:88124502525">8 812 450-25-25</a></p>
+        <p class="main-nav__contacts-tel">
+          <a class="main-nav__tel" href="tel:88124502525">8 812 450-25-25</a>
+        </p>
       </div>
     </nav>
   </header>
   <main class="inner-page main-container">
-    <h1 class="inner-page__title main-layout">Сливочное мороженое</h1>
+    <h1 class="inner-page__title">Сливочное мороженое</h1>
     <ul class="breadcrumbs__list main-layout no-style">
-      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
       <li class="breadcrumbs__item">
-        <a href="catalog.html">Каталог</a>
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs__item">
-        <a title="Current">Сливочное</a>
+        <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" title="Current">Сливочное</a>
       </li>
     </ul>
     <section class="filter">
@@ -284,7 +290,7 @@
           <article class="catalog__item-content">
             <img class="catalog__item-img" src="img/ice-cream-7.jpg" alt="" width="267" height="267">
             <h3 class="catalog__title">
-              <a class="catalog__title-link" href="blank.html">Сливочно-лимонное<br> с карамельной присыпкой</a>
+              <a class="catalog__title-link" href="blank.html">Сливочно-лимонное с карамельной присыпкой</a>
             </h3>
             <p class="catalog__item-price">315 ₽<span class="catalog__item-weight">/кг</span></p>
             <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
@@ -342,28 +348,28 @@
         </li>
       </ul>
       <ul class="catalog__nav-list no-style">
-        <li class="catalog__nav-back catalog__nav-item--blocked">
-          <a>
+        <li class="catalog__nav-item">
+          <a class="catalog__nav-btn catalog__nav-back catalog__nav-link--blocked">
             <img src="img/icon-catalog-nav.svg" width="7" height="12" alt="">
           </a>
         </li>
-        <li class="catalog__nav-item catalog__nav-item--current">
-          <a href="blank.html">1</a>
+        <li class="catalog__nav-item">
+          <a class="catalog__nav-link catalog__nav-link--current">1</a>
         </li>
         <li class="catalog__nav-item">
-          <a href="blank.html">2</a>
+          <a class="catalog__nav-link" href="blank.html">2</a>
         </li>
         <li class="catalog__nav-item">
-          <a href="blank.html">3</a>
+          <a class="catalog__nav-link" href="blank.html">3</a>
         </li>
         <li class="catalog__nav-item">
-          <a href="blank.html">4</a>
+          <a class="catalog__nav-link" href="blank.html">4</a>
         </li>
         <li class="catalog__nav-item">
-          <a href="blank.html">5</a>
+          <a class="catalog__nav-link" href="blank.html">5</a>
         </li>
-        <li class="catalog__nav-next">
-          <a>
+        <li class="catalog__nav-item">
+          <a class="catalog__nav-btn catalog__nav-next" class="catalog__nav-btn" href="blank.html">
             <img src="img/icon-catalog-nav.svg" width="7" height="12" alt="">
           </a>
         </li>
@@ -399,10 +405,13 @@
       <li class="main-footer__nav-item"><a href="blank.html">Наши документы</a></li>
       <li class="main-footer__nav-item"><a href="blank.html">Экологические стандарты</a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-html-academy" target="_blank">
+    <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
       <img src="img/logo-html-academy.svg" alt="логотип html academy" width="108" height="31">
     </a>
-    <p class="main-footer__copy">Сделано в HTML Academy © 2021</p>
+    <p class="main-footer__copy">
+      Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML
+        Academy</a> © 2021
+    </p>
   </footer>
 </body>
 
