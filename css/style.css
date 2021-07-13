@@ -554,7 +554,6 @@ a:active {
 .cart-dropbown {
   display: none;
 }
-
 .main-nav__cart:hover .cart-dropbown {
   width: 539px;
   height: 242px;
@@ -586,16 +585,23 @@ a:active {
 }
 
 .cart-dropbown__close {
+  display: flex;
+  align-items: center;
+  order: -2;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-dropbown__close-btn {
   width: 11px;
   height: 11px;
-  order: -2;
   background: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
 }
 
-.cart-dropbown__close::before {
+.cart-dropbown__close-btn::before {
   content: "";
   display: block;
   width: 11px;
