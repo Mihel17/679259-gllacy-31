@@ -5,6 +5,7 @@ const sliderBtn3 = document.querySelector(".promo__controllers-btn-3");
 const slide1 = document.querySelector(".promo__slide-1");
 const slide2 = document.querySelector(".promo__slide-2");
 const slide3 = document.querySelector(".promo__slide-3");
+const currentSlide = document.querySelector(".promo__controllers-btn--current");
 
 sliderBtn1.addEventListener("click", function(evt){
   evt.preventDefault();
@@ -46,20 +47,23 @@ sliderBtn3.addEventListener("click", function(evt){
   console.log("click3");
 });
 
+currentSlide.tabIndex = -1;
+
 // modal
 
 const contactBtn = document.querySelector(".contacts__btn");
 const modal = document.querySelector(".feedback-modal");
 const modalClose = document.querySelector(".modal-close");
+const feedbackInput = document.querySelector(".feedback-modal__input");
 
 contactBtn.addEventListener("click", function(evt){
   evt.preventDefault();
   modal.classList.remove("hidden");
-  console.log('modal-open');
+  feedbackInput.focus();
 });
 
 modalClose.addEventListener("click", function(evt){
   evt.preventDefault();
   modal.classList.add("hidden");
-  console.log('modal-close');
 });
+

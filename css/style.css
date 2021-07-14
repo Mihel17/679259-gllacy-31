@@ -1409,6 +1409,7 @@ a:active {
   --range-end: 60%;
   --range-end-num: calc(var(--range-end) - var(--range-start));
 }
+
 .bar {
   position: relative;
   width: var(--range-end-num);
@@ -1417,7 +1418,7 @@ a:active {
   background-color: #f8f7f4;
 }
 
-.bar__start::before {
+.bar__start {
   position: absolute;
   top: 0;
   left: 0;
@@ -1429,22 +1430,22 @@ a:active {
   cursor: pointer;
 }
 
-.bar__end::after,
-.bar__start::before {
+.bar__end,
+.bar__start {
   content: "";
   box-sizing: border-box;
   border-radius: 50%;
 }
 
 .bar__start:hover {
-  transform: scale(1.1) translateX(4.5px);
+  transform: scale(1.1);
 }
 
 .bar__end:hover {
-  transform: scale(1.1) translateX(-4.5px);
+  transform: scale(1.1);
 }
 
-.bar__end::after {
+.bar__end {
   position: absolute;
   top: 0;
   right: 0;
@@ -1454,6 +1455,11 @@ a:active {
   border: 8px solid #fff;
   background-color: #ababab;
   cursor: pointer;
+}
+
+.bar__start:focus,
+.bar__end:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px black;
 }
 
 /* price range */
@@ -1493,6 +1499,14 @@ a:active {
   grid-template-columns: 22px 1fr;
   column-gap: 11px;
   align-items: center;
+}
+
+.filter__fatness-radio:focus + .filter__fatness-label {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+}
+
+.filter__fillers-input:focus + .filter__fillers-label {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px black;
 }
 
 .filter__fatness-label::before {
