@@ -1458,10 +1458,28 @@ a:active {
 
 /* price range */
 
+.filter__sort {
+  padding-right: 7px;
+}
+
+.filter__sort::before {
+  content: "";
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  z-index: 1;
+  right: 11px;
+  background: url("../img/icon-select.svg") no-repeat center center;
+  pointer-events: none;
+}
+
 .filter__sort-select {
+  width: 100%;
+  position: relative;
   background-color: transparent;
   color: #fff;
   border: 0;
+  appearance: none;
 }
 
 .filter__sort-select option {
