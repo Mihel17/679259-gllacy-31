@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
@@ -59,7 +59,7 @@
           <form class="main-nav__search-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="main-nav__search-input input" id="main-nav__search" type="text" placeholder="Крем-брюле"
               tabindex="0">
-            <label class="visually-hidden" for="main-nav__search"></label>
+            <label class="visually-hidden" for="main-nav__search">Поиск</label>
           </form>
         </li>
         <li class="main-nav__btn main-nav__login">
@@ -187,7 +187,8 @@
                 <a class="catalog__title-link" href="blank.html">Сливочное с апельсиновым джемом и цитрусовой
                   стружкой</a>
               </h3>
-              <p class="catalog__item-price">310 ₽<span class="catalog__item-weight">/кг</span></p>
+              <p class="catalog__item-price">310<span class="catalog__item-currency">₽</span><span
+                  class="catalog__item-weight">/кг</span></p>
               <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
             </article>
           </li>
@@ -197,7 +198,8 @@
               <h3 class="catalog__title">
                 <a class="catalog__title-link" href="blank.html">Сливочно-кофейное с кусочками шоколада</a>
               </h3>
-              <p class="catalog__item-price">380 ₽<span class="catalog__item-weight">/кг</span></p>
+              <p class="catalog__item-price">380 <span class="catalog__item-currency">₽</span><span
+                  class="catalog__item-weight">/кг</span></p>
               <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
             </article>
           </li>
@@ -208,7 +210,8 @@
                 <a class="catalog__title-link" href="blank.html">Сливочно-клубничное<br> с присыпкой из белого
                   шоколада</a>
               </h3>
-              <p class="catalog__item-price">355 ₽<span class="catalog__item-weight">/кг</span></p>
+              <p class="catalog__item-price">355 <span class="catalog__item-currency">₽</span><span
+                  class="catalog__item-weight">/кг</span></p>
               <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
             </article>
           </li>
@@ -218,7 +221,8 @@
               <h3 class="catalog__title">
                 <a class="catalog__title-link" href="blank.html">Сливочное крем-брюле<br> с карамельной подливкой</a>
               </h3>
-              <p class="catalog__item-price">415 ₽<span class="catalog__item-weight">/кг</span></p>
+              <p class="catalog__item-price">415 <span class="catalog__item-currency">₽</span><span
+                  class="catalog__item-weight">/кг</span></p>
               <a class="btn catalog__btn" href="blank.html">Быстрый просмотр</a>
             </article>
           </li>
@@ -227,8 +231,7 @@
       <section class="features main-layout">
         <h2 class="visually-hidden"></h2>
         <p class="features__fake-title">Магазин Глэйси &minus; это онлайн и офлайн-магазин по продаже мороженого
-          собственного
-          производства на развес</p>
+          собственного производства на развес</p>
         <ul class="features__list no-style">
           <li class="features__item features__item-1">
             <p class="features__text">Все наше мороженое изготавливается на собственном производстве, с использованием
@@ -264,7 +267,9 @@
             что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe__form-input input" type="email" placeholder="email@example.com">
+            <input class="subscribe__form-input input" id="subscribe-input" type="email"
+              placeholder="email@example.com">
+            <label class="visually-hidden" for="subscribe-input">введите Ваш email</label>
             <button class="subscribe__submit btn" type="submit">Отправить</button>
           </form>
         </div>
