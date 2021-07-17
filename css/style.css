@@ -252,6 +252,7 @@ a:active {
   display: grid;
   grid-template-columns: 164px 1fr 300px;
   align-items: center;
+  padding-top: 2px;
 }
 
 /* LOGO */
@@ -1030,7 +1031,7 @@ a:active {
   background: url(../img/wafer-bg.png) repeat center center;
   border-radius: 16px;
   padding: 24px 20px 21px;
-  margin: 42px 0 40px;
+  margin: 43px 0 40px;
 }
 
 .features__fake-title {
@@ -1245,7 +1246,7 @@ a:active {
   width: 100%;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 31px;
+  margin-top: 30px;
 }
 
 /* CATALOG.HTML */
